@@ -3,7 +3,7 @@ services:
     name: django-app
     env: python
     buildCommand: "./build.sh"
-    startCommand: "gunicorn jb_backend_project.wsgi:application"
+    startCommand: "gunicorn jb_backend_project.jb_backend_project.wsgi:application"
     envVars:
       - key: DATABASE_URL
         fromDatabase:
